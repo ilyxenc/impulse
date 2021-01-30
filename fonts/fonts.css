@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Aeroport_Bold';
+  src: url(./Aeroport-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Aeroport_Light';
+  src: url(./Aeroport-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Aeroport_Medium';
+  src: url(./Aeroport-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Aeroport';
+  src: url(./Aeroport.ttf);
+}
+
+@font-face {
+  font-family: 'AeroportMono';
+  src: url(./AeroportMono.ttf);
+}

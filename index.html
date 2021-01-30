@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Impulse</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="ru">
+  <meta name="generator" content="N/A">
+  <meta name="language" content="Russian">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link type="text/css" rel="stylesheet" href="./fonts/fonts.css">
+  <link type="text/css" rel="stylesheet" href="./index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("a[href^='#']").click(function(event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        $("#menu").css("display", "none");
+        $("body").removeClass("menuOpened");
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
+          //узнаем высоту от начала страницы до блока на который ссылается якорь
+          top = $(id).offset().top - 100;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({
+          scrollTop: top
+        }, 500);
+      });
+
+      $(".burger").click(function(e) {
+        e.preventDefault();
+        $("#menu").css("display", "block");
+        $("body").addClass("menuOpened");
+      });
+
+      $(".close").click(function(e) {
+        e.preventDefault();
+        $("#menu").css("display", "none");
+        $("body").removeClass("menuOpened");
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <div id="menu">
+    <div class="closeBlock block">
+      <img class="close" src="images/close.png" alt="" />
+    </div>
+    <div class="linksBlock">
+      <a class="menuTopLink" href="#formula"><span>что такое <br> Experience&nbsp;forum&nbsp;<span class="tm">ТМ</span></span></a>
+      <a class="menuTopLink" href="#tAC"><span>темы&nbsp;и&nbsp;вызовы&nbsp;2021</span></a>
+      <a class="menuTopLink" href="#speakers"><span>спикеры</span></a>
+      <a class="menuTopLink" href="#program"><span>программа</span></a>
+      <a class="menuTopLink" href="#pO"><span>варианты&nbsp;участия</span></a>
+      <a class="menuTopLink" href="#partners"><span>партнеры</span></a>
+      <a class="menuTopLink" href="#report"><span>отчет&nbsp;impulse&nbsp;2020</span></a>
+      <a class="menuTopLink" href="#organizers"><span>организаторы</span></a>
+      <a class="button1 buttonMenu" href="#"> <img class="buttonMenuImg1" src="./images/download.png" alt="" /> скачать программу </a>
+      <a class="button2 buttonMenu buttonMenu2" href="#"> <img class="buttonMenuImg2" src="./images/ticket.png" alt="" /> купить билет </a>
+    </div>
+    <div class="hr"></div>
+    <div class="contactsBlock">
+      <div class="menuTopContacts">
+        <a class="menuMail" href="mailto:hey@incult.me"><span>hey@incult.me</span></a>
+        <a class="menuTel" href="tel:+7 916 877-15-05">+7 916 877-15-05</a>
+      </div>
+      <a class="" href="#"><img class="socialImg" src="./images/i.png" alt="" /></a>
+      <a class="" href="#"><img class="socialImg" src="./images/f.png" alt="" /></a>
+      <a class="" href="#"><img class="socialImg" src="./images/wa.png" alt="" /></a>
+    </div>
+    <img class="menuBg" src="./images/menu-bg.png" alt="">
+  </div>
+
+  <div class="header block">
+    <div class="menu">
+      <div class="menuLeft flexBetweenCenter">
+        <a class="menuLink" href="#program">Программа</a>
+        <a class="menuLink" href="#speakers">Спикеры</a>
+        <a class="menuLink" href="#organizers">Организаторы</a>
+      </div>
+      <div class="menuRight flexBetweenCenter">
+        <a class="number" href="tel:+7 916 877-15-05">+7&nbsp;916&nbsp;877-15-05</a>
+        <a class="wA" href="#"> <img class="wAImg" src="./images/wa.png" alt="" /> </a>
+        <img class="burger" src="./images/burger.png" alt="" />
+      </div>
+    </div>
+
+    <div class="headerInfo">
+      <div class="headerInfoLeft">
+        <div class="headerInfoLeftText1And2">
+          <p class="headerInfoLeftText1">
+            impulse
+          </p>
+          <p class="headerInfoLeftText2">
+            experience forum
+          </p>
+        </div>
+        <p class="headerInfoLeftText3">
+          технологии непрерывных изменений
+        </p>
+      </div>
+
+      <div class="headerInfoRight">
+        <p class="headerInfoRightText1">
+          15–16
+        </p>
+        <p class="headerInfoRightText2">
+          апреля 2021 года
+        </p>
+
+        <a class="button1 buttonHeader1" href="#"> <img class="buttonHeaderImg1" src="./images/download.png" alt="" /> скачать программу </a>
+        <a class="button2 buttonHeader2" href="#"> <img class="buttonHeaderImg2" src="./images/ticket.png" alt="" /> купить билет </a>
+      </div>
+    </div>
+
+    <img class="headerBg" src="./images/header-bg.png" alt="" />
+  </div>
+
+  <div class="menuBlock block">
+    <div class="menuBlockLeft">
+      <a class="menuBlockLink" href="#formula"><span>что такое <br> Experience&nbsp;forum&nbsp;<span class="tm">ТМ</span></span></a>
+      <a class="menuBlockLink" href="#tAC"><span>темы&nbsp;и&nbsp;вызовы&nbsp;2021</span></a>
+      <a class="menuBlockLink" href="#speakers"><span>спикеры</span></a>
+      <a class="menuBlockLink" href="#program"><span>программа</span></a>
+      <a class="menuBlockLink" href="#pO"><span>варианты&nbsp;участия</span></a>
+      <a class="menuBlockLink" href="#partners"><span>партнеры</span></a>
+      <a class="menuBlockLink" href="#report"><span>отчет&nbsp;impulse&nbsp;2020</span></a>
+      <a class="menuBlockLink" href="#organizers"><span>организаторы</span></a>
+    </div>
+    <div class="menuBlockRight">
+      <div class="flexBetweenCenter menuBlockInfo">
+        <div class="menuBlockInfoWidth menuBlockInfoWidth1">
+          <p class="menuBlockNumber">
+            11
+          </p>
+          <p class="menuBlockCaption">
+            часов <br> контента
+          </p>
+        </div>
+        <div class="menuBlockInfoMarginLeft menuBlockInfoWidth">
+          <p class="menuBlockNumber">
+            1500
+          </p>
+          <p class="menuBlockCaption">
+            лидеров <br> трансформаций
+          </p>
+        </div>
+      </div>
+      <p class="menuBlockText">
+        2020 год разрушил последние надежды на проектный подход в управлении изменениями. Недостаточно делать хорошо то, что вы уже умеете делать. Новая задача бизнеса — трансформироваться непрерывно, невероятно быстро и эффективно. Это требование
+        меняет наше отношение к процессам, управлению, культуре, инструментам и т.д.
+      </p>
+    </div>
+    <img class="menuBlockBg" src="./images/menu-block-bg.png" alt="" />
+  </div>
+  <p class="menuBlockText menuBlockTextNone block">
+    2020 год разрушил последние надежды на проектный подход в управлении изменениями. Недостаточно делать хорошо то, что вы уже умеете делать. Новая задача бизнеса — трансформироваться непрерывно, невероятно быстро и эффективно. Это требование меняет
+    наше отношение к процессам, управлению, культуре, инструментам и т.д.
+  </p>
+
+  <div id="formula" class="formula block">
+    <div class="flexBetweenTop formula1">
+      <div class="formula1Left">
+        <p class="formula1Text">
+          Experience forum<span>ТМ</span>—<br class="br1"> это новый<br class="br2"> уникальный формат работы, созданный командой «Культуры Инноваций»
+        </p>
+      </div>
+      <div class="flexBetweenTop formula1Right">
+        <div class="">
+          <p class="formula1Caption">
+            Он позволяет: 
+          </p>
+          <ul class="formula1Ul">
+            <li class="formula1Li">персонализировать контент под свои задачи</li>
+            <li class="formula1Li">вовлечь участников</li>
+            <li class="formula1Li">запустить реальные проекты</li>
+          </ul>
+        </div>
+        <a class="" href="#"><img class="formula1WhatIs" src="./images/what-is.png" alt="" /></a>
+      </div>
+    </div>
+
+    <div class="formula2">
+      <div class="formula2Block">
+        <p class="formula2Text">
+          Формирование <br> запроса <br> от участников
+        </p>
+        <img class="formula2Bg formula2Bg1" src="./images/formula/formula-circle-1.png" alt="" />
+      </div>
+      <p class="formulaSymbol">
+        +
+      </p>
+      <div class="formula2Block">
+        <p class="formula2Text">
+          Персонализация <br> контента и пути <br> участия
+        </p>
+        <img class="formula2Bg formula2Bg2" src="./images/formula/formula-circle-2.png" alt="" />
+      </div>
+      <p class="formulaSymbol">
+        +
+      </p>
+      <div class="formula2Block">
+        <p class="formula2Text">
+          Групповая&nbsp;работа <br> и приземление <br> инсайтов
+        </p>
+        <img class="formula2Bg formula2Bg3" src="./images/formula/formula-circle-3.png" alt="" />
+      </div>
+      <p class="formulaSymbol">
+        =
+      </p>
+      <div class="formula2Block">
+        <p class="formula2Text">
+          EXPERIENCE <br> FORUM <br> IMPULSE
+        </p>
+        <img class="formula2Bg formula2Bg4" src="./images/formula/formula-circle-4.png" alt="" />
+      </div>
+    </div>
+
+    <div class="formula3">
+      <div class="formula3Left">
+        <div class="formula3Item">
+          <div class="formula3ImgBlock">
+            <img class="formula3Img" src="./images/formula/formula-1.png" alt="" />
+            <div class="formulaLine"></div>
+          </div>
+          <div class="">
+            <p class="formulaDate">
+              29 марта – 14 апреля
+            </p>
+            <p class="formula3Caption">
+              Марафон «Энергия <br> изменений»
+            </p>
+            <p class="formula3Description">
+              3 недели совместной <br> работы
+            </p>
+          </div>
+        </div>
+
+        <div class="formula3Item">
+          <div class="formula3ImgBlock">
+            <img class="formula3Img" src="./images/formula/formula-2.png" alt="" />
+            <div class="formulaLine"></div>
+          </div>
+          <div class="">
+            <p class="formulaDate">
+              15 – 16 апреля
+            </p>
+            <p class="formula3Caption">
+              Impulse <br> Forum
+            </p>
+            <p class="formula3Description">
+              Работа с модератором <br> 2 дня (5+ часов работы с инсайтами) 
+            </p>
+          </div>
+        </div>
+
+        <div class="formula3Item">
+          <div class="formula3ImgBlock">
+            <img class="formula3Img" src="./images/formula/formula-3.png" alt="" />
+            <div class="formulaLine formulaLineNone"></div>
+          </div>
+          <div class="">
+            <p class="formulaDate">
+              19 – 23 апреля
+            </p>
+            <p class="formula3Caption">
+              5 Masterminds
+            </p>
+            <p class="formula3Description">
+              5 дней — 5 фокусов трансформаций (сборки  с лидерами)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="formula3Right">
+        <div class="formula3Item">
+          <div class="formula3ImgBlock">
+            <img class="formula3Img" src="./images/formula/formula-4.png" alt="" />
+            <div class="formulaLine"></div>
+          </div>
+          <div class="">
+            <p class="formulaDate">
+
+            </p>
+            <p class="formula3Caption">
+              Insights
+            </p>
+            <p class="formula3Description">
+              Встреча команды по приземлению инсайтов* <br> <span>*Для корпоративного трека</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="formula3Item">
+          <div class="formula3ImgBlock">
+            <img class="formula3Img" src="./images/formula/formula-5.png" alt="" />
+          </div>
+          <div class="">
+            <p class="formulaDate">
+              26 апреля
+            </p>
+            <p class="formula3Caption">
+              Итоговый отчет <br> по инсайтам
+            </p>
+            <p class="formula3Description">
+              Персонализированный отчет
+            </p>
+          </div>
+        </div>
+        <a class="button2 buttonFormula buttonFormulaNone" href="#pO"> <img class="buttonFormulaImg" src="./images/star.png" alt="" /> выбрать формат участия </a>
+      </div>
+    </div>
+    <a class="button2 buttonFormula" href="#pO"> <img class="buttonFormulaImg" src="./images/star.png" alt="" /> выбрать формат участия </a>
+  </div>
+
+  <div id="tAC" class="tAC block">
+    <p class="tACCaption">
+      темы и <br> вызовы 2021
+    </p>
+    <p class="tACText">
+      на IMPULSE вы:
+    </p>
+
+    <div class="tACItems tACItemsPC">
+      <div class="">
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            поймете, как <span>планировать, когда горизонт не определен</span>
+          </p>
+        </div>
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            найдете <span>свой подход</span> к вовлечению людей в изменения и трансформации
+          </p>
+        </div>
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            услышите <span>честные истории</span> изменений в процессе трансформации
+          </p>
+        </div>
+      </div>
+      <div class="">
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            определите точки опоры: фокусы, подходы, ценности, культура, <span>видение</span>
+          </p>
+        </div>
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            обнаружите <span>источники энергии для трансформаций</span>
+          </p>
+        </div>
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            получите <span>прикладные инструменты</span>
+          </p>
+        </div>
+      </div>
+      <div class="tACItems3">
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            узнаете, <span>как быть сильным плечом</span> сотрудникам во время пандемии
+          </p>
+        </div>
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            увидите варианты <span>методов работы с выгоранием и энергией</span> сотрудников во время изоляции/выхода из пандемии
+          </p>
+        </div>
+        <a class="button1 buttonTAC" href="#"> <img class="buttonTACImg" src="./images/comment.png" alt="" /> узнать больше </a>
+      </div>
+    </div>
+    <div class="tACItems tACItemsTablet">
+      <div class="">
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            поймете, как <span>планировать, когда горизонт не определен</span>
+          </p>
+        </div>
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            найдете <span>свой подход</span> к вовлечению людей в изменения и трансформации
+          </p>
+        </div>
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            услышите <span>честные истории</span> изменений в процессе трансформации
+          </p>
+        </div>
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            определите точки опоры: фокусы, подходы, ценности, культура, <span>видение</span>
+          </p>
+        </div>
+      </div>
+      <div class="tACItems3">
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            обнаружите <span>источники энергии для трансформаций</span>
+          </p>
+        </div>
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            получите <span>прикладные инструменты</span>
+          </p>
+        </div>
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            узнаете, <span>как быть сильным плечом</span> сотрудникам во время пандемии
+          </p>
+        </div>
+        <div class="tACItem">
+          <img class="tACItemImg" src="./images/checked.png" alt="" />
+          <p class="tACItemText">
+            увидите варианты <span>методов работы с выгоранием и энергией</span> сотрудников во время изоляции/выхода из пандемии
+          </p>
+        </div>
+      </div>
+    </div>
+    <a class="button1 buttonTAC buttonTACTablet" href="#"> <img class="buttonTACImg" src="./images/comment.png" alt="" /> узнать больше </a>
+
+    <img class="tACBg" src="./images/themes-and-challenges-bg.png" alt="" />
+  </div>
+
+  <div id="speakers" class="speakers block">
+    <p class="speakersCaption">
+      спикеры
+    </p>
+    <div class="speakersItems">
+      <div class="speakerItem">
+        <img class="speakerImg" src="./images/speakers/speaker-1.png" alt="" />
+        <p class="speakerName">
+          Надия <br> Черкасова
+        </p>
+        <p class="speakerDescription">
+          Заместитель президента — председателя правления банка «Открытие»
+        </p>
+        <p class="speakerText">
+          Тема:
+        </p>
+        <p class="speakerTopic">
+          «Энергия изменений»
+        </p>
+      </div>
+      <div class="speakerItem">
+        <img class="speakerImg" src="./images/speakers/speaker-2.png" alt="" />
+        <p class="speakerName">
+          Илья <br> Кретов
+        </p>
+        <p class="speakerDescription">
+          Генеральный директор eBay на глобальных развивающихся рынках
+        </p>
+        <p class="speakerText">
+          Тема:
+        </p>
+        <p class="speakerTopic">
+          «Название темы»
+        </p>
+      </div>
+      <div class="speakerItem">
+        <img class="speakerImg" src="./images/speakers/speaker-3.png" alt="" />
+        <p class="speakerName">
+          Елена <br> Черникова
+        </p>
+        <p class="speakerDescription">
+          CEO «Культуры Инноваций»
+        </p>
+        <p class="speakerText">
+          Тема:
+        </p>
+        <p class="speakerTopic">
+          «Квантовая стратегия»
+        </p>
+      </div>
+      <div class="speakerItem">
+        <img class="speakerImg" src="./images/speakers/speaker-4.png" alt="" />
+        <p class="speakerName">
+          Имя <br> Спикера
+        </p>
+        <p class="speakerDescription">
+          Должность еще одного спикера форума
+        </p>
+        <p class="speakerText">
+          Тема:
+        </p>
+        <p class="speakerTopic">
+          «Название темы»
+        </p>
+      </div>
+      <div class="speakerItem">
+        <img class="speakerImg" src="./images/speakers/speaker-5.png" alt="" />
+        <p class="speakerName">
+          Имя <br> Спикера
+        </p>
+        <p class="speakerDescription">
+          Должность еще одного спикера форума
+        </p>
+        <p class="speakerText">
+          Тема:
+        </p>
+        <p class="speakerTopic">
+          «Название темы»
+        </p>
+      </div>
+      <div class="speakerItem">
+        <img class="speakerImg" src="./images/speakers/speaker-6.png" alt="" />
+        <p class="speakerName">
+          Имя <br> Спикера
+        </p>
+        <p class="speakerDescription">
+          Должность еще одного спикера форума
+        </p>
+        <p class="speakerText">
+          Тема:
+        </p>
+        <p class="speakerTopic">
+          «Название темы»
+        </p>
+      </div>
+    </div>
+
+    <img class="speakersBg" src="./images/speakers-bg.png" alt="" />
+  </div>
+
+  <div id="program" class="program block">
+    <p class="programCaption">
+      программа
+    </p>
+    <div class="programBlock">
+      <div class="programLeft">
+        <div class="programDate">
+          <p class="programNumber">
+            15
+          </p>
+          <div class="programDateBlock">
+            <p class="programMonth">
+              апреля
+            </p>
+            <p class="programDay">
+              первый день
+            </p>
+          </div>
+        </div>
+
+        <div class="programLeftTablet">
+          <div class="programItem programItem1">
+            <img class="programImg" src="./images/checked-2.png" alt="" />
+            <div class="programTextBlock">
+              <p class="programItemCaption">
+                Спикеры
+              </p>
+              <p class="programItemText">
+                СЕО и руководители ведущих российских и международных компаний
+              </p>
+              <p class="programItemText">
+                Онлайн-общение и открытый разговор
+              </p>
+            </div>
+          </div>
+
+          <div class="programItem">
+            <img class="programImg" src="./images/checked-2.png" alt="" />
+            <div class="programTextBlock">
+              <p class="programItemCaption">
+                Insight-сессии с&nbsp;модераторами
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="programRight">
+        <div class="programDate">
+          <p class="programNumber">
+            16
+          </p>
+          <div class="programDateBlock">
+            <p class="programMonth">
+              апреля
+            </p>
+            <p class="programDay">
+              второй день
+            </p>
+          </div>
+        </div>
+
+        <div class="programRightItems">
+          <div class="">
+            <div class="programItem">
+              <img class="programImg" src="./images/checked-2.png" alt="" />
+              <div class="programTextBlock">
+                <p class="programItemCaption">
+                  Спикеры
+                </p>
+                <p class="programItemText">
+                  СЕО и руководители ведущих российских и международных компаний
+                </p>
+                <p class="programItemText">
+                  Онлайн-общение и открытый разговор
+                </p>
+              </div>
+            </div>
+
+            <div class="programItem">
+              <img class="programImg" src="./images/checked-2.png" alt="" />
+              <div class="programTextBlock">
+                <p class="programItemCaption">
+                  Insight-сессии с&nbsp;модераторами
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="programItem programItemLast">
+            <img class="programImg" src="./images/checked-2.png" alt="" />
+            <div class="programTextBlock">
+              <p class="programItemCaption">
+                Обзоры
+              </p>
+              <p class="programItemText">
+                Технологии экспериментов: инструменты прототипирования, исследования и обратной связи от клиентов и сотрудников
+              </p>
+              <p class="programItemText">
+                Технологии коммуникаций: новые подходы, программы и приложения для повышения эффективности коммуникаций и укрепления связей
+              </p>
+              <p class="programItemText">
+                ИТ-ландшафт для управления, производства, логистики и других управленческих задач
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttonsProgram">
+      <a class="button1 buttonProgram1" href="#"> <img class="buttonProgramImg1" src="./images/checked-3.png" alt="" /> узнавать об обновлениях первым </a>
+      <a class="button2 buttonProgram2" href="#"> <img class="buttonProgramImg2" src="./images/ticket.png" alt="" /> стать участником </a>
+    </div>
+  </div>
+
+  <div id="pO" class="pO block">
+    <div class="pOCaptionBlock">
+      <p class="pOCaption">
+        варианты участия
+      </p>
+      <a class="button2 buttonPOTop" href="#"> <img class="buttonPOImg" src="./images/envelope.png" alt="" /> отправить письмо руководителю </a>
+    </div>
+
+    <div class="pOItems">
+      <div class="pOItem pOItem1">
+        <div class="">
+          <p class="pOItemCaption">
+            insider
+          </p>
+          <ul class="pOItemUl">
+            <li>Ссылка на трансляцию для 1 человека</li>
+            <li>Возможность задать вопрос спикерам</li>
+            <li>Синхронный перевод</li>
+          </ul>
+        </div>
+        <div class="">
+          <p class="pOItemPrice">
+            7 000 руб.
+          </p>
+          <a class="button1 buttonPO" href="#"> <img class="buttonPOImg" src="./images/ticket-2.png" alt="" /> купить билет </a>
+        </div>
+      </div>
+      <div class="pOItem pOItem2">
+        <div class="">
+          <p class="pOItemCaption">
+            pro
+          </p>
+          <ul class="pOItemUl pOItemUl2">
+            <div class="">
+              <li>Ссылка на трансляцию для 1 человека</li>
+              <li>Возможность задать вопрос спикерам</li>
+              <li>Синхронный перевод</li>
+              <li>Доступ к офлайн-площадкам во время форума</li>
+              <li><span>Трехнедельный марафон <br> „Энергия изменений“</span></li>
+            </div>
+            <div class="">
+              <li>Участие в пяти <span>Masterminds</span> по фокусам трансформации после форума</li>
+              <li><span>Доступ к материалам Insight box</span> (запись трансляции, итоговый отчет по выступлениям с основными инсайтами)</li>
+              <li><span>Доступ к записи форума IMPULSE 2020</span></li>
+              <li>Возможность посетить митапы „Nice problem to have“ перед форумом в офлайн-формате</li>
+            </div>
+          </ul>
+        </div>
+        <div class="">
+          <p class="pOItemPrice">
+            35 000 руб.
+          </p>
+          <a class="button1 buttonPO" href="#"> <img class="buttonPOImg" src="./images/ticket-2.png" alt="" /> купить билет </a>
+        </div>
+      </div>
+      <div class="pOItem pOItem3">
+        <div class="">
+          <p class="pOItemCaption">
+            from impulse <br>to&nbsp;impact
+          </p>
+          <ul class="pOItemUl pOItemUl3">
+            <div class="">
+              <li>Участие одной команды в корпоративном треке – <span>до 12 человек</span></li>
+              <li>Формирование запроса (интервью со стейкхолдерами)</li>
+              <li><span>Персональный модератор</span></li>
+              <li><span>Марафон „Энергия изменений“</span> в удобном для вас канале</li>
+              <li>Синхронный перевод</li>
+              <li>Возможность задать вопрос спикерам</li>
+            </div>
+            <div class="">
+              <li>Участие в пяти <span>Masterminds</span> по фокусам трансформации с другими участниками форума (билеты PRO)</li>
+              <li><span>Воркшоп</span> по результатам форума</li>
+              <li>Подготовка <span>персональной презентации-отчета</span></li>
+              <li><span>Записи выступлений</span> для использования в корпоративном университете</li>
+              <li>Доступ к записи форума IMPULSE 2020</li>
+            </div>
+          </ul>
+        </div>
+        <div class="">
+          <p class="pOItemPrice">
+            250 000 руб.
+          </p>
+          <a class="button1 buttonPO" href="#"> <img class="buttonPOImg" src="./images/ticket-2.png" alt="" /> купить билет </a>
+        </div>
+      </div>
+    </div>
+
+    <img class="pOBg" src="./images/p-o-bg.png" alt="" />
+  </div>
+
+  <div id="partners" class="partners block">
+    <p class="partnersCaption">
+      партнеры
+    </p>
+    <img class="partnersImg" src="./images/partners.png" alt="" />
+    <img class="partnersImg partnersImgTablet" src="./images/partners-tablet.png" alt="" />
+    <a class="button2 buttonPartners" href="#"> <img class="buttonPartnersImg" src="./images/handshake.png" alt="" /> купить билет </a>
+  </div>
+
+  <div id="report" class="report block">
+    <p class="reportCaption">
+      отчет IMPULSE&nbsp;2020
+    </p>
+    <img class="reportImg" src="./images/report.png" alt="" />
+    <div class="reportButtons">
+      <a class="button1 buttonReport" href="#"> <img class="buttonReportImg1" src="./images/download.png" alt="" /> скачать отчет </a>
+      <div class="">
+        <a class="button2 buttonReport" href="#"> <img class="buttonReportImg2" src="./images/ticket.png" alt="" /> купить билет** </a>
+        <p class="buttonReportDescription">
+          **видео с форума 2020 входит в билет PRO
+        </p>
+      </div>
+    </div>
+
+    <img class="reportBg" src="./images/report-bg.png" alt="" />
+  </div>
+
+  <div id="organizers" class="organizers block">
+    <p class="organizersCaption">
+      организаторы
+    </p>
+    <div class="organizersBlock">
+      <div class="organizer">
+        <img class="organizerImg" src="./images/organizers/organizer-1.png" alt="" />
+        <p class="organizerName">
+          Елена <br> Черникова
+        </p>
+        <p class="organizerDescription">
+          Innovation Culture
+        </p>
+      </div>
+      <div class="organizer">
+        <img class="organizerImg" src="./images/organizers/organizer-2.png" alt="" />
+        <p class="organizerName">
+          Анастасия <br> Хрисанфова
+        </p>
+        <p class="organizerDescription">
+          HRDome
+        </p>
+      </div>
+      <div class="organizer">
+        <img class="organizerImg" src="./images/organizers/organizer-3.png" alt="" />
+        <p class="organizerName">
+          Илья <br> Горбачев
+        </p>
+        <p class="organizerDescription">
+          MarketEmotion
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footerBlock block">
+      <p class="footerCaption">
+        let’s change together!
+      </p>
+      <div class="footerData">
+        <div class="footerLeft">
+          <img class="footerImg" src="./images/impulse.png" alt="" />
+          <p class="footerText footerTextTablet">
+            технологии&nbsp;непрерывных <br> изменений
+          </p>
+          <p class="footerDate">
+            15-16<br><span>&nbsp;&nbsp;апреля 2021 года</span>
+          </p>
+        </div>
+        <div class="footerRight">
+          <p class="footerText">
+            технологии <br> непрерывных <br> изменений
+          </p>
+          <a class="footerMail" href="mailto:hey@incult.me"><span>hey@incult.me</span></a>
+          <a class="footerTel" href="tel:+7 916 877-15-05">+7 916 877-15-05</a>
+          <div class="footerSocial">
+            <a class="" href="#"><img class="footerSocialImg" src="./images/i.png" alt="" /></a>
+            <a class="" href="#"><img class="footerSocialImg footerSocialImg2" src="./images/f.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footerDocs">
+        <a class="footerDoc footerDoc1" href="#">Согласие на обработку персональных данных</a>
+        <a class="footerDoc footerDoc2" href="#">Договор публичной оферты</a>
+      </div>
+    </div>
+    <img class="footerBg" src="./images/footer-bg.png" alt="" />
+  </div>
+</body>
+
+</html>

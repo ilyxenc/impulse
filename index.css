@@ -1,0 +1,2731 @@
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+input, textarea, select {
+  outline: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+:root {}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, img, small, strike, strong, b, i, ol, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+li, form, label, table, tbody, tfoot, thead, tr, th, td, canvas, footer, header, menu, nav, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0;
+  background: #FFFFFF;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+body {
+  width: auto;
+  overflow: hidden;
+  overflow-y: scroll;
+  min-width: 320px;
+}
+
+.block {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.flexBetweenCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexBetweenTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.button1 {
+  background: #FFFFFF;
+  font-family: "Aeroport_Bold";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.button2 {
+  color: #FFFFFF;
+  background: #733DEC;
+  font-family: "Aeroport_Bold";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 15px rgba(115, 61, 236, 0.25);
+  transition: 0.3s;
+}
+
+.button1:hover {
+  background: #F4F4F4;
+}
+
+.button2:hover {
+  opacity: 0.8;
+}
+
+.headerBg {
+  width: 1291px;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: calc(-130px - 390px);
+  top: -321px;
+  z-index: -1;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.menuLeft {
+  margin-top: 70px;
+  color: #FFFFFF;
+}
+
+.menuRight {
+  margin-top: 61px;
+}
+
+.menuLink {
+  font-family: "Aeroport";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-right: 25px;
+}
+
+.number {
+  font-family: "Aeroport_Bold";
+  font-size: 24px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.wAImg {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.wA {
+  margin-left: 50px;
+}
+
+.headerInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.headerInfoLeft {
+  color: #FFFFFF;
+  margin-top: 160px;
+}
+
+.headerInfoLeftText1 {
+  font-family: "Aeroport_Medium";
+  font-size: 130px;
+  font-style: normal;
+  line-height: 130px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-indent: -8px;
+}
+
+.headerInfoLeftText2 {
+  font-family: "Aeroport";
+  font-size: 35px;
+  font-style: normal;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-indent: -1px;
+  margin-top: 8px;
+}
+
+.headerInfoLeftText3 {
+  font-family: "Aeroport_Medium";
+  font-size: 64px;
+  font-style: normal;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 500px;
+  margin-top: 72px;
+}
+
+.headerInfoRight {
+  text-align: right;
+  margin-top: 170px;
+}
+
+.headerInfoRightText1 {
+  font-family: "Aeroport_Medium";
+  font-size: 120px;
+  font-style: normal;
+  line-height: 114px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin-right: -6px;
+}
+
+.headerInfoRightText2 {
+  font-family: "Aeroport";
+  font-size: 36px;
+  font-style: normal;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin-right: -2px;
+}
+
+.buttonHeader1, .buttonHeader2 {
+  width: 400px;
+  height: 75px;
+}
+
+.buttonHeader1 {
+  margin-top: 68px;
+}
+
+.buttonHeader2 {
+  margin-top: 36px;
+}
+
+.buttonHeaderImg1 {
+  width: 16px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.buttonHeaderImg2 {
+  width: 31px;
+  height: auto;
+  margin-right: 14px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.menuBlock {
+  margin-top: 370px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.menuBlockInfoMarginLeft {
+  margin-left: 71px;
+}
+
+.menuBlockLink {
+  font-family: "Aeroport_Medium";
+  font-size: 36px;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 36px;
+  width: fit-content;
+}
+
+.menuBlockLink span {
+  display: inline;
+  box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.menuBlockLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.tm {
+  font-size: 10px;
+  line-height: 15px;
+  box-shadow: none !important;
+  vertical-align: top;
+}
+
+.menuBlockNumber {
+  font-family: "Aeroport";
+  font-size: 96px;
+  font-style: normal;
+  line-height: 131px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.menuBlockCaption {
+  font-family: "Aeroport_Medium";
+  font-size: 36px;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.menuBlockText {
+  font-family: "Aeroport_Light";
+  font-size: 25px;
+  font-style: normal;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 600px;
+  margin-top: 100px;
+}
+
+.menuBlockBg {
+  width: 1000px;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: -300px;
+  top: -300px;
+  z-index: -1;
+}
+
+.menuBlockTextNone {
+  display: none;
+}
+
+.formula {
+  margin-top: 250px;
+}
+
+.formula1Text {
+  font-family: "Aeroport_Bold";
+  font-size: 30px;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 490px;
+  margin-right: 15px;
+}
+
+.formula1Text span {
+  display: inline;
+  font-size: 10px;
+  line-height: 15px;
+  vertical-align: top;
+}
+
+.formula1Caption {
+  font-family: "Aeroport_Bold";
+  font-size: 24px;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.formula1Ul {
+  list-style: none;
+  max-width: 283px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.formula1Li {
+  font-family: "Aeroport_Light";
+  font-size: 17px;
+  font-style: normal;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.formula1Li::before {
+  content: "\2022";
+  color: #733DEC;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.formula1WhatIs {
+  width: 238px;
+  height: auto;
+  margin-left: 59px;
+  margin-top: -20px;
+}
+
+.formula2Text {
+  font-family: "Aeroport_Bold";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.formula2Bg {
+  width: 294px;
+  height: 294px;
+  position: absolute;
+  top: -124px;
+  z-index: -1;
+}
+
+.formula2Bg1 {
+  left: -77px;
+}
+
+.formula2Bg2 {
+  left: -70px;
+}
+
+.formula2Bg3 {
+  left: -67px;
+}
+
+.formula2Bg4 {
+  left: -94px;
+}
+
+.formula2Block {
+  position: relative;
+}
+
+.formulaSymbol {
+  font-family: "Aeroport_Light";
+  font-size: 48px;
+  font-style: normal;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0 40px;
+}
+
+.formula2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.formula3 {
+  margin-top: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.formula3Left, .formula3Right {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.formula3Img {
+  width: 46px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.formula3ImgBlock {
+  position: relative;
+  width: min-content;
+  margin: 0 auto;
+}
+
+.formula3Item {
+  text-align: center;
+  max-width: 215px;
+}
+
+.formulaDate {
+  font-family: "Aeroport_Bold";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+  height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #733DEC;
+  margin: 6px auto 13px;
+}
+
+.formula3Caption {
+  font-family: "Aeroport_Bold";
+  font-size: 21px;
+  font-style: normal;
+  line-height: 21px;
+  height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.formula3Description {
+  font-family: "Aeroport";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 16px auto 0;
+}
+
+.formula3Description span {
+  color: #964CF0;
+}
+
+.formulaLine {
+  position: absolute;
+  top: 22px;
+  left: 66px;
+  height: 1px;
+  width: 300%;
+  background: #000000;
+}
+
+.buttonFormula {
+  width: 400px;
+  height: 75px;
+  margin: 50px auto 0;
+}
+
+.buttonFormulaImg {
+  width: 20px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.br2 {
+  display: none;
+}
+
+.buttonFormulaNone {
+  display: none;
+}
+
+.tAC {
+  margin-top: 175px;
+}
+
+.tACCaption {
+  font-family: "Aeroport_Bold";
+  font-size: 55px;
+  font-style: normal;
+  line-height: 71px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.tACCaption br {
+  display: none;
+}
+
+.tACText {
+  font-family: "Aeroport_Medium";
+  font-size: 30px;
+  font-style: normal;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  margin-top: 49px;
+}
+
+.tACBg {
+  width: 2711px;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: -891px;
+  top: -464px;
+  z-index: -1;
+}
+
+.tACItems {
+  margin-top: 53px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tACItemImg {
+  width: 52px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.tACItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.tACItemText {
+  font-family: "Aeroport_Light";
+  font-size: 21px;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  max-width: 300px;
+  min-height: 160px;
+}
+
+.tACItemText span {
+  font-family: "Aeroport_Bold";
+}
+
+.buttonTAC {
+  max-width: 300px;
+  width: 90%;
+  height: 70px;
+}
+
+.buttonTACImg {
+  width: 20px;
+  height: auto;
+  margin-right: 11px;
+}
+
+.tACItems3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.tACItemsTablet, .buttonTACTablet {
+  display: none;
+}
+
+.speakers {
+  margin-top: 146px;
+}
+
+.speakersCaption {
+  font-family: "Aeroport_Bold";
+  font-size: 55px;
+  font-style: normal;
+  line-height: 71px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.speakersItems {
+  margin-top: 38px;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.speakersItems::-webkit-scrollbar {
+  display: none;
+}
+
+.speakerItem {
+  max-width: 250px;
+  margin-right: 57px;
+}
+
+.speakerImg {
+  width: 242px;
+  height: auto;
+  margin-bottom: 38px;
+}
+
+.speakerName {
+  font-family: "Aeroport_Bold";
+  font-size: 36px;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.speakerDescription {
+  font-family: "Aeroport";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 27px;
+  min-height: 108px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 17px;
+}
+
+.speakerText {
+  font-family: "Aeroport_Medium";
+  font-size: 14px;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.speakerTopic {
+  font-family: "Aeroport_Medium";
+  font-size: 21px;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #733DEC;
+}
+
+.speakersBg {
+  width: 1610px;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: -1200px;
+  bottom: -1000px;
+  z-index: -1;
+}
+
+.program {
+  margin-top: 140px;
+}
+
+.programBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.programCaption {
+  font-family: "Aeroport_Bold";
+  font-size: 55px;
+  font-style: normal;
+  line-height: 71px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 31px;
+}
+
+.programLeft {
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 1px #000000;
+  width: 22%;
+  padding: 14px 60px 60px 30px;
+}
+
+.programRight {
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 1px #000000;
+  width: 65%;
+  margin-left: 21px;
+  padding: 14px 60px 60px 30px;
+}
+
+.programRightItems {
+  display: flex;
+}
+
+.programDate {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.programNumber {
+  font-family: "Aeroport_Medium";
+  font-size: 85px;
+  font-style: normal;
+  line-height: 116px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #733DEC;
+  margin-right: 15px;
+}
+
+.programMonth {
+  font-family: "Aeroport_Bold";
+  font-size: 40px;
+  font-style: normal;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #733DEC;
+}
+
+.programDay {
+  font-family: "Aeroport";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.programImg {
+  width: 46px;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+.programTextBlock {
+  padding-left: 10px;
+}
+
+.programItem {
+  max-width: 280px;
+}
+
+.programItemLast {
+  max-width: 385px;
+}
+
+.programItemCaption {
+  font-family: "Aeroport_Bold";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.programItemText {
+  font-family: "Aeroport";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  margin-top: 15px;
+}
+
+.programItemText::before {
+  content: '+';
+  color: #733DEC;
+  font-size: inherit;
+  line-height: inherit;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.buttonsProgram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonProgram1, .buttonProgram2 {
+  width: 450px;
+  height: 75px;
+  margin-top: 47px;
+}
+
+.buttonProgram2 {
+  margin-left: 24px;
+}
+
+.buttonProgramImg1 {
+  width: 27px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.buttonProgramImg2 {
+  width: 33px;
+  height: auto;
+  margin-right: 18px;
+}
+
+.pO {
+  margin-top: 154px;
+}
+
+.pOCaption {
+  font-family: "Aeroport_Bold";
+  font-size: 55px;
+  font-style: normal;
+  line-height: 71px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.pOCaptionBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonPOTop {
+  width: 400px;
+  height: 50px;
+}
+
+.buttonPOImg {
+  width: 20px;
+  height: auto;
+  margin-right: 7px;
+}
+
+.pOBg {
+  width: 1831px;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: -300px;
+  top: -396px;
+  z-index: -1;
+}
+
+.pOItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 56px;
+}
+
+.pOItem {
+  padding: 23px 30px 38px;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+  box-sizing: border-box;
+}
+
+.pOItem1 {
+  width: 25%;
+}
+
+.pOItem2, .pOItem3 {
+  width: 35%;
+}
+
+.pOItemCaption {
+  font-family: "Aeroport_Bold";
+  font-size: 36px;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.pOItemUl {
+  padding-left: 20px;
+  list-style: none;
+  min-height: 460px;
+}
+
+.pOItemUl3 {
+  min-height: calc(460px - 36px);
+}
+
+.pOItemUl li {
+  font-family: "Aeroport";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.pOItemUl li::before {
+  content: "\2022";
+  color: #000000;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.pOItemUl li span {
+  font-family: "Aeroport_Bold";
+}
+
+.buttonPO {
+  width: 100%;
+  height: 50px;
+}
+
+.pOItemPrice {
+  font-family: "Aeroport_Bold";
+  font-size: 30px;
+  font-style: normal;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.buttonPOImg {
+  width: 29px;
+  height: auto;
+  margin-right: 9px;
+}
+
+.partners {
+  margin-top: 160px;
+}
+
+.partnersCaption {
+  font-family: "Aeroport_Bold";
+  font-size: 55px;
+  font-style: normal;
+  line-height: 71px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.partnersImg {
+  width: 93%;
+  height: auto;
+  display: block;
+  margin: 30px auto 75px;
+}
+
+.buttonPartners {
+  width: 450px;
+  height: 75px;
+  margin: 0 auto;
+}
+
+.buttonPartnersImg {
+  width: 43px;
+  height: auto;
+  margin-right: 12px;
+}
+
+.partnersImgTablet {
+  display: none;
+}
+
+.report {
+  margin-top: 200px;
+}
+
+.reportCaption {
+  font-family: "Aeroport_Bold";
+  font-size: 55px;
+  font-style: normal;
+  line-height: 71px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.reportImg {
+  max-width: 834px;
+  height: auto;
+  display: block;
+  margin: 25px auto 41px;
+}
+
+.buttonReport {
+  width: 400px;
+  height: 75px;
+}
+
+.buttonReportImg1 {
+  width: 16px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.buttonReportImg2 {
+  width: 29px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.reportButtons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.reportButtons .button2, .buttonReportDescription {
+  margin-left: 34px;
+}
+
+.buttonReportDescription {
+  font-family: "Aeroport_Medium";
+  font-size: 17px;
+  font-style: normal;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 5px;
+  color: #FFFFFF;
+}
+
+.reportBg {
+  width: 2224px;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: -546px;
+  top: -157px;
+  z-index: -1;
+}
+
+.organizersCaption {
+  font-family: "Aeroport_Bold";
+  font-size: 55px;
+  font-style: normal;
+  line-height: 71px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.organizers {
+  margin-top: 180px;
+}
+
+.organizersBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.organizer {
+  max-width: 242px;
+}
+
+.organizerImg {
+  width: 242px;
+  height: auto;
+  margin-bottom: 41px;
+}
+
+.organizerName {
+  font-family: "Aeroport_Bold";
+  font-size: 36px;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.organizerDescription {
+  font-family: "Aeroport_Bold";
+  font-size: 24px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #733DEC;
+}
+
+.footer {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+  padding-bottom: 137px;
+}
+
+.footerBg {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.footerCaption {
+  font-family: "Aeroport_Medium";
+  font-size: 85px;
+  font-style: normal;
+  line-height: 85px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.footerData {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 120px;
+}
+
+.footerLeft, .footerRight {
+  width: 50%;
+}
+
+.footerImg {
+  width: 466px;
+  height: auto;
+  display: block;
+  margin-left: 68px;
+}
+
+.footerDate {
+  font-family: "Aeroport_Medium";
+  font-size: 81px;
+  font-style: normal;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 152px;
+  margin-top: 70px;
+}
+
+.footerDate span {
+  font-family: "Aeroport";
+  font-size: 24px;
+  font-style: normal;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.footerText {
+  font-family: "Aeroport_Medium";
+  font-size: 36px;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 105px;
+  margin-top: 151px;
+}
+
+.footerTextTablet {
+  display: none;
+}
+
+.footerMail {
+  font-family: "Aeroport_Bold";
+  font-size: 36px;
+  font-style: normal;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #733DEC;
+  display: block;
+  margin-left: 105px;
+  margin-top: 151px;
+  width: fit-content;
+}
+
+.footerMail span {
+  display: inline;
+  box-shadow: 0px 1px 0 rgb(0 0 0 / 10%);
+}
+
+.footerTel {
+  font-family: "Aeroport_Bold";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: block;
+  margin-left: 105px;
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.footerSocial {
+  margin-left: 105px;
+  margin-top: 133px;
+  text-align: left;
+}
+
+.footerSocialImg {
+  width: 31px;
+  height: 31px;
+  margin-right: 35px;
+}
+
+.footerDocs {
+  text-align: left;
+  margin-top: 51px;
+}
+
+.footerDoc {
+  font-family: "Aeroport";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3827DB;
+}
+
+.footerDoc1 {
+  margin-left: 152px;
+}
+
+.footerDoc2 {
+  margin-left: 118px;
+}
+
+#menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: #FFFFFF;
+  z-index: 100;
+  display: none;
+}
+
+.linksBlock {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.buttonMenu {
+  width: 300px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.buttonMenu2 {
+  margin-top: 15px;
+}
+
+.buttonMenuImg1 {
+  width: 16px;
+  height: auto;
+  margin-right: 9px;
+}
+
+.buttonMenuImg2 {
+  width: 29px;
+  height: auto;
+  margin-right: 16px;
+}
+
+.menuOpened {
+  overflow: hidden;
+}
+
+.menuTopLink {
+  font-family: "Aeroport_Medium";
+  font-size: 30px;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+  width: fit-content;
+  max-width: 301px;
+}
+
+.hr {
+  width: calc(100% - 70px);
+  height: 1px;
+  background: #000000;
+  margin: 70px auto 43px;
+}
+
+.menuMail, .menuTel {
+  font-family: "Aeroport_Bold";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #733DEC;
+  display: block;
+}
+
+.menuTel {
+  color: #000000;
+  margin-left: 40px;
+  margin-right: 36px;
+}
+
+.socialImg {
+  width: 27px;
+  height: 27px;
+  display: block;
+  margin-left: 24px;
+}
+
+.contactsBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.menuMail span {
+  display: inline;
+  box-shadow: 0px 1px 0 rgb(0 0 0 / 10%);
+}
+
+.menuTopLink span {
+  display: inline;
+  box-shadow: 0px 1px 0 rgb(0 0 0 / 10%);
+}
+
+.closeBlock {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 48px 0 27px;
+}
+
+.close {
+  display: block;
+  width: 27px;
+  height: auto;
+  cursor: pointer;
+}
+
+.menuBg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  display: block;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1290px) {
+  .block {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .formulaLine {
+    width: 200%;
+  }
+
+  .formula3Caption {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .menuBlockText {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .headerInfoLeftText1 {
+    font-size: 110px;
+    line-height: 110px;
+  }
+
+  .headerInfoLeftText3 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 868px) {
+  .headerBg {
+    width: 1350px;
+    left: auto;
+    right: -80px;
+    top: -480px;
+  }
+
+  .headerInfoLeftText1 {
+    font-size: 130px;
+    line-height: 130px;
+  }
+
+  .headerInfoLeftText3 {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  .headerInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .block {
+    padding: 0 35px;
+  }
+
+  .menuLeft {
+    display: none;
+  }
+
+  .menuRight {
+    margin-top: 43px;
+  }
+
+  .menu {
+    justify-content: flex-end;
+  }
+
+  .burger {
+    display: block;
+    width: 27px;
+    height: auto;
+    margin-left: 59px;
+  }
+
+  .headerInfoRightText1, .headerInfoRightText2 {
+    text-align: center;
+  }
+
+  .headerInfoLeft {
+    margin-top: 85px;
+  }
+
+  .headerInfoRight {
+    margin-top: 115px;
+  }
+
+  .menuBlockLink {
+    font-size: 30px;
+  }
+
+  .menuBlockInfo {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .menuBlockCaption {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .menuBlockInfoMarginLeft {
+    margin-left: 0;
+    margin-top: 23px;
+  }
+
+  .menuBlockInfoWidth {
+    width: 248px;
+  }
+
+  .menuBlockInfoWidth1 {
+    margin-top: 100px;
+  }
+
+  .menuBlockText {
+    display: none;
+    max-width: none;
+    margin-top: 87px;
+  }
+
+  .menuBlockTextNone {
+    display: block;
+  }
+
+  .menuBlock {
+    margin-top: 220px !important;
+  }
+
+  .menuBlockBg {
+    width: 1200px;
+    height: auto;
+    display: block;
+    position: absolute;
+    right: -350px;
+    top: -250px;
+    z-index: -1;
+  }
+
+  .formula1 {
+    flex-direction: column;
+  }
+
+  .br1 {
+    display: none;
+  }
+
+  .formula1Text {
+    max-width: 100%;
+  }
+
+  .br2 {
+    display: block;
+  }
+
+  .formula1Right {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .formula1WhatIs {
+    width: 177px;
+    margin: 0;
+    margin-left: 15px;
+  }
+
+  .formula1Ul {
+    max-width: none;
+  }
+
+  .formula1Text {
+    font-size: 33px;
+    line-height: 39px;
+  }
+
+  .formula {
+    margin-top: 156px;
+  }
+
+  .formula2Text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .formulaSymbol {
+    font-size: 40px;
+    line-height: 55px;
+    margin: 0 25px;
+  }
+
+  .formula2Bg {
+    width: 219px;
+    height: 219px;
+    top: -100px;
+  }
+
+  .formula2Bg1 {
+    left: -55px;
+  }
+
+  .formula2Bg2 {
+    left: -49px;
+  }
+
+  .formula2Bg3 {
+    left: -47px;
+  }
+
+  .formula2Bg4 {
+    left: -66px;
+  }
+
+  .formula3 {
+    justify-content: flex-start;
+  }
+
+  .formula3Left, .formula3Right {
+    flex-direction: column;
+  }
+
+  .formula3Right {
+    margin-left: 50px;
+  }
+
+  .formula3Item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .formula3Item {
+    max-width: 310px;
+  }
+
+  .formulaDate, .formula3Caption, .formula3Description {
+    text-align: left;
+  }
+
+  .formula3Caption {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: auto;
+    margin-top: 4px;
+  }
+
+  .formula3Caption br {
+    display: none;
+  }
+
+  .formula3Description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .formula3ImgBlock {
+    margin-right: 10px;
+  }
+
+  .formulaLine {
+    left: 23px;
+    top: 59px;
+    height: 66px;
+    width: 1px;
+  }
+
+  .formulaLineNone {
+    display: none;
+  }
+
+  .formulaDate {
+    margin: 4px 0 2px;
+    height: auto;
+  }
+
+  .buttonFormula {
+    display: none;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+  }
+
+  .buttonFormulaNone {
+    display: flex;
+  }
+
+  .formula3Item {
+    height: 124px;
+    margin-bottom: 12px;
+  }
+
+  .tACItem {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .tACItemImg {
+    margin: 0 0 8px -6px;
+  }
+
+  .tACItemText {
+    font-size: 20px;
+    line-height: 26px;
+    min-height: 100px;
+  }
+
+  .tACItemsPC {
+    display: none;
+  }
+
+  .tACItemsTablet, .buttonTACTablet {
+    display: flex;
+  }
+
+  .buttonTACTablet {
+    width: 260px;
+    height: 50px;
+    margin: 60px auto 0;
+  }
+
+  .tACCaption {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  .tACText {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .speakers {
+    margin-top: 104px;
+  }
+
+  .speakersItems {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .speakerItem {
+    max-width: 200px;
+    margin-right: 0px;
+  }
+
+  .speakersCaption {
+    color: #000000;
+  }
+
+  .speakerImg {
+    width: 134px;
+    margin-bottom: 10px;
+  }
+
+  .speakerName {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .speakerDescription {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .speakerTopic {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .speakersBg {
+    right: -700px;
+    bottom: -500px;
+  }
+
+  .program {
+    margin-top: 100px;
+  }
+
+  .programCaption {
+    margin-bottom: 10px;
+  }
+
+  .programBlock {
+    display: block;
+  }
+
+  .programLeft, .programRight {
+    width: calc(100% - 74px - 16px);
+    margin: 0;
+  }
+
+  .programRight {
+    margin-top: 20px;
+  }
+
+  .programLeftTablet {
+    display: flex;
+  }
+
+  .programItem1 {
+    max-width: 70%;
+  }
+
+  .programNumber, .programMonth {
+    font-family: "Aeroport_Bold";
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .programDateBlock {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .programDay {
+    font-size: 16px;
+    line-height: 31px;
+    margin-left: 10px;
+  }
+
+  .buttonProgram1, .buttonProgram2 {
+    width: 340px;
+    height: 50px;
+    margin-top: 28px;
+    font-size: 16px;
+  }
+
+  .buttonProgram2 {
+    margin-left: 15px;
+  }
+
+  .pOItems {
+    display: block;
+  }
+
+  .pOItem1, .pOItem2, .pOItem3 {
+    width: 100%;
+  }
+
+  .pOItemUl {
+    min-height: auto;
+  }
+
+  .pOItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 11px;
+  }
+
+  .buttonPO {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  .buttonPOTop {
+    display: none;
+  }
+
+  .pOItemPrice, .pOItemCaption {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .pOItemCaption {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .pOItemCaption br {
+    display: none;
+  }
+
+  .pOItemUl2, .pOItemUl3 {
+    display: flex;
+  }
+
+  .pOItemUl2 div, .pOItemUl3 div {
+    width: 40%;
+    margin-right: 20px;
+  }
+
+  .pOBg {
+    width: 2000px;
+    left: -600px;
+    top: -296px;
+  }
+
+  .partnersCaption {
+    font-size: 48px;
+  }
+
+  .partners {
+    margin-top: 100px;
+  }
+
+  .partnersCaption {
+    font-size: 48px;
+  }
+
+  .partnersImg {
+    margin: 50px auto 70px;
+  }
+
+  .buttonPartners {
+    width: 260px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  .buttonPartnersImg {
+    width: 31px;
+    height: auto;
+    margin-right: 7px;
+  }
+
+  .partnersImg {
+    display: none;
+  }
+
+  .partnersImgTablet {
+    display: block;
+  }
+
+  .report {
+    margin-top: 150px;
+  }
+
+  .reportCaption {
+    font-size: 48px;
+  }
+
+  .reportImg {
+    max-width: 100%;
+    margin: 80px auto 64px;
+  }
+
+  .buttonReport {
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+  .reportButtons {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .reportButtons .button2, .buttonReportDescription {
+    margin-left: 0;
+  }
+
+  .reportButtons .button2 {
+    margin: 18px auto 0;
+  }
+
+  .buttonReportDescription {
+    font-size: 16px;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+
+  .reportBg {
+    width: 2000px;
+    left: -746px;
+  }
+
+  .organizersCaption {
+    font-size: 48px;
+  }
+
+  .organizers {
+    margin-top: 200px;
+  }
+
+  .organizer {
+    max-width: 200px;
+  }
+
+  .organizerImg {
+    width: 194px;
+    margin-bottom: 40px;
+  }
+
+  .organizerName {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+
+  .organizerDescription {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .footerCaption {
+    font-size: 68px;
+    line-height: 68px;
+  }
+
+  .footerData {
+    flex-direction: column;
+  }
+
+  .footerRight, .footerLeft {
+    width: 100%;
+  }
+
+  .footerImg {
+    margin: 0 auto;
+  }
+
+  .footerDate {
+    margin: 30px auto 0;
+    text-align: center;
+  }
+
+  .footerText {
+    display: none;
+    text-align: center;
+    margin: 10px auto 40px;
+  }
+
+  .footerTextTablet {
+    display: block;
+  }
+
+  .footerMail {
+    display: block;
+    margin: 55px auto 10px;
+  }
+
+  .footerTel {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footerSocial {
+    margin: 50px auto 0;
+    text-align: center;
+  }
+
+  .footerSocialImg {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto;
+  }
+
+  .footerSocialImg2 {
+    margin-left: 20px;
+  }
+
+  .footerDocs {
+    margin: 20px auto 0;
+  }
+
+  .footerDoc1, .footerDoc2 {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .footerBg {
+    width: 1600px;
+    right: -180px;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .number, .wA {
+    display: none;
+  }
+
+  .burger {
+    filter: invert(1);
+    width: 21px;
+    padding: 15px 0 15px 15px;
+  }
+
+  .menuRight {
+    margin-top: 13px;
+  }
+
+  .menuTopContacts {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socialImg {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .contactsBlock {
+    display: block;
+  }
+
+  .menuTel {
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .block {
+    padding: 0 25px;
+  }
+
+  .headerInfoLeftText1And2 {
+    text-align: left;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .headerInfoLeftText1 {
+    font-size: 70px;
+    line-height: 70px;
+    text-indent: -5px;
+  }
+
+  .headerInfoLeftText2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .headerInfoLeft {
+    margin-top: 0px;
+  }
+
+  .headerInfoLeftText3 {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 200px;
+    margin: 21px auto 0;
+  }
+
+  .headerInfoRight {
+    margin-top: 50px;
+  }
+
+  .headerInfoRightText1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .headerInfoRightText2 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  .buttonHeader1, .buttonHeader2 {
+    width: 100%;
+    height: 50px;
+    max-width: 312px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttonHeader2 {
+    margin-top: 19px;
+  }
+
+  .button1, .button2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .headerInfoRight {
+    width: 100%;
+  }
+
+  .headerBg {
+    width: 1118px;
+    right: -200px;
+    top: -570px;
+  }
+
+  .menuBlock {
+    margin-top: 78px !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menuBlockInfo {
+    flex-direction: row;
+  }
+
+  .menuBlockInfoWidth {
+    width: auto;
+  }
+
+  .menuBlockNumber {
+    font-size: 50px;
+    line-height: 75px;
+  }
+
+  .menuBlockCaption {
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .menuBlockInfoWidth1, .menuBlockInfoMarginLeft {
+    margin: 0;
+  }
+
+  .menuBlockInfoMarginLeft {
+    margin-left: 25px;
+  }
+
+  .menuBlockText {
+    margin-top: 46px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .menuBlockBg {
+    width: 1000px;
+    right: unset;
+    top: unset;
+    right: -350px;
+    bottom: -600px;
+  }
+
+  .menuBlockRight {
+    margin-top: 50px;
+  }
+
+  .formula1Text {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .formula1Caption {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .formula1Li {
+    line-height: 20px;
+  }
+
+  .formula1Right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formula1WhatIs {
+    width: 231px;
+    margin: 25px auto 0;
+  }
+
+  .formula2 {
+    flex-direction: column;
+  }
+
+  .formula2Bg {
+    width: 257px;
+    height: 257px;
+    top: -110px;
+  }
+
+  .formula2Bg1 {
+    left: -74px;
+  }
+
+  .formula2Bg2 {
+    left: -68px;
+  }
+
+  .formula2Bg3 {
+    left: -66px;
+  }
+
+  .formula2Bg4 {
+    left: -85px;
+  }
+
+  .formulaSymbol {
+    margin: 21px auto 56px;
+  }
+
+  .formula3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formula3Right {
+    margin: 0;
+  }
+
+  .tACCaption {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .tACText {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .tACItems {
+    flex-direction: column;
+  }
+
+  .tACItem {
+    flex-direction: row;
+    margin-bottom: 11px;
+  }
+
+  .tACItemText {
+    font-size: 14px;
+    line-height: 18px;
+    min-height: 0;
+  }
+
+  .tACItems3 {
+    align-items: flex-start;
+  }
+
+  .tACBg {
+    left: -1291px;
+  }
+
+  .tACCaption br {
+    display: block;
+  }
+
+  .tAC {
+    margin-top: 100px;
+  }
+
+  .speakersItems {
+    flex-wrap: nowrap;
+  }
+
+  .speakerItem {
+    max-width: 200px;
+    margin-right: 20px;
+    min-width: 160px;
+    min-height: 70px;
+  }
+
+  .speakersCaption {
+    color: #000000;
+    font-size: 36px;
+  }
+
+  .speakerImg {
+    width: 134px;
+    margin-bottom: 10px;
+  }
+
+  .speakerName {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .speakerDescription {
+    font-size: 11px;
+    line-height: 15px;
+    margin: 10px 0 15px;
+  }
+
+  .speakerTopic {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .speakersBg {
+    width: 1000px;
+    right: -550px;
+    bottom: -700px;
+  }
+
+  .programLeftTablet, .programRightItems {
+    display: block;
+  }
+
+  .programItem {
+    max-width: none;
+  }
+
+  .programLeft, .programRight {
+    padding: 30px 20px;
+    width: calc(100% - 40px);
+  }
+
+  .programNumber, .programMonth {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .programNumber {
+    margin-right: 6px;
+  }
+
+  .programDay {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .programCaption {
+    font-size: 36px;
+  }
+
+  .programImg {
+    width: 38px;
+    height: 35px;
+    margin: 0;
+  }
+
+  .programItem {
+    display: flex;
+    margin-top: 17px;
+  }
+
+  .buttonsProgram {
+    display: block;
+  }
+
+  .buttonsProgram {
+    margin-top: 38px;
+  }
+
+  .buttonProgram1, .buttonProgram2 {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .buttonProgram2 {
+    font-size: 16px;
+    margin: 19px 0 0;
+  }
+
+  .pOCaption {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .pO {
+    margin-top: 63px;
+  }
+
+  .partnersCaption {
+    font-size: 48px;
+  }
+
+  .partners {
+    margin-top: 90px;
+  }
+
+  .partnersCaption {
+    font-size: 36px;
+  }
+
+  .partnersImg {
+    margin: 16px auto 42px;
+  }
+
+  .buttonPartners {
+    width: 100%;
+  }
+
+  .report {
+    margin-top: 100px;
+  }
+
+  .reportCaption {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .reportImg {
+    max-width: 100%;
+    margin: 20px auto 42px;
+  }
+
+  .buttonReport {
+    width: 100%;
+  }
+
+  .reportButtons .button2, .buttonReportDescription {
+    margin-left: 0;
+  }
+
+  .reportButtons .button2 {
+    margin: 15px auto 0;
+  }
+
+  .buttonReportDescription {
+    font-size: 14px;
+    margin: 5px auto 0;
+  }
+
+  .reportBg {
+    width: 1200px;
+    left: -446px;
+    top: -50px;
+  }
+
+  .organizersCaption {
+    font-size: 36px;
+  }
+
+  .organizers {
+    margin-top: 71px;
+  }
+
+  .organizer {
+    max-width: 150px;
+    margin-right: 35px;
+  }
+
+  .organizerImg {
+    width: 134px;
+    margin-bottom: 17px;
+  }
+
+  .organizerName {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 15px;
+  }
+
+  .organizerDescription {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .organizersBlock {
+    overflow: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .organizersBlock::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pOItems {
+    display: flex;
+    justify-content: unset;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  .pOItemCaption {
+    padding-left: 20px;
+  }
+
+  .pOItemUl li {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .pOItem {
+    display: block;
+    min-width: 100%;
+    margin-right: 30px;
+  }
+
+  .pOItemUl2 div, .pOItemUl3 div {
+    width: 100%;
+  }
+
+  .pOItemUl2, .pOItemUl3 {
+    display: block;
+  }
+
+  .pOItemUl {
+    min-height: 460px;
+  }
+
+  .buttonPO {
+    margin: 0 auto;
+  }
+
+  .footerImg {
+    width: 70%;
+  }
+
+  .footerText {
+    font-size: 22px;
+    line-height: 22px;
+    margin: 30px auto 60px;
+  }
+
+  .footerMail {
+    font-size: 30px;
+  }
+
+  .footerTel {
+    font-size: 18px;
+  }
+
+  .footerDoc {
+    font-size: 12px;
+  }
+
+  .footerBg {
+    width: 1000px;
+    right: -100px;
+  }
+
+  .menuBg {
+    display: none;
+  }
+
+  .menuTopLink {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .buttonMenu {
+    margin-top: 20px;
+  }
+
+  .hr {
+    margin: 20px auto;
+  }
+
+  .closeBlock {
+    margin-top: 13px;
+    margin-bottom: 0px;
+  }
+
+  .close {
+    width: 21px;
+    padding: 15px 0 15px 15px;
+  }
+
+  .footerCaption{
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .menuBlock {
+    align-items: flex-start;
+  }
+}
