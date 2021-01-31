@@ -1062,6 +1062,7 @@ body {
   height: auto;
   display: block;
   margin: 30px auto 75px;
+  mix-blend-mode: multiply;
 }
 
 .buttonPartners {
@@ -1474,6 +1475,38 @@ body {
   top: 0;
   display: block;
   z-index: -1;
+}
+
+.br4, .br5 {
+  display: none;
+}
+
+.buttonPOTopTablet {
+  display: none;
+}
+
+.scrollBar {
+  height: 1px;
+  width: 100%;
+  background: #000000;
+  position: relative;
+  margin: 50px auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slider {
+  width: 52px;
+  height: 52px;
+  display: block;
+  margin: -26px 0 0;
+  position: absolute;
+  cursor: pointer;
+  background: url(./images/slider.png) no-repeat center center / contain;
 }
 
 @media only screen and (max-width: 1440px) {}
@@ -2149,6 +2182,10 @@ body {
     width: 1600px;
     right: -180px;
   }
+
+  .buttonPOTopTablet {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 668px) {
@@ -2405,7 +2442,9 @@ body {
   }
 
   .tACBg {
-    left: -1291px;
+    left: -1030px;
+    top: -370px;
+    width: 2506px;
   }
 
   .tACCaption br {
@@ -2454,9 +2493,9 @@ body {
   }
 
   .speakersBg {
-    width: 1000px;
-    right: -550px;
-    bottom: -700px;
+    width: 1100px;
+    right: -600px;
+    bottom: -800px;
   }
 
   .programLeftTablet, .programRightItems {
@@ -2656,7 +2695,11 @@ body {
   }
 
   .pOItemUl {
-    min-height: 460px;
+    min-height: 600px;
+  }
+
+  .pOItemUl1, .pOItemUl2 {
+    margin-top: 42px;
   }
 
   .buttonPO {
@@ -2718,9 +2761,41 @@ body {
     padding: 15px 0 15px 15px;
   }
 
-  .footerCaption{
+  .footerCaption {
     font-size: 48px;
     line-height: 60px;
+  }
+
+  .br1, .br4, .br5 {
+    display: block;
+  }
+
+  .br2, .br3 {
+    display: none;
+  }
+
+  .formula {
+    margin-top: 84px;
+  }
+
+  .buttonTAC {
+    width: 100%;
+  }
+
+  .buttonPOTop {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 23px;
+  }
+
+  .pOBg {
+    width: 1650px;
+    left: -750px;
+    top: -196px;
+  }
+
+  .footer {
+    padding-bottom: 50px;
   }
 }
 

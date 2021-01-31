@@ -16,6 +16,8 @@
   <link type="text/css" rel="stylesheet" href="./index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   <script type="text/javascript">
     $(document).ready(function() {
       $("a[href^='#']").click(function(event) {
@@ -203,7 +205,7 @@
         <p class="formula2Text">
           Персонализация <br> контента и пути <br> участия
         </p>
-        <img class="formula2Bg formula2Bg2" src="./images/formula/formula-circle-2.png" alt="" />
+        <img class="formula2Bg formula2Bg2" src="./images/formula/formula-circle-3.png" alt="" />
       </div>
       <p class="formulaSymbol">
         +
@@ -212,7 +214,7 @@
         <p class="formula2Text">
           Групповая&nbsp;работа <br> и приземление <br> инсайтов
         </p>
-        <img class="formula2Bg formula2Bg3" src="./images/formula/formula-circle-3.png" alt="" />
+        <img class="formula2Bg formula2Bg3" src="./images/formula/formula-circle-2.png" alt="" />
       </div>
       <p class="formulaSymbol">
         =
@@ -237,10 +239,10 @@
               29 марта – 14 апреля
             </p>
             <p class="formula3Caption">
-              Марафон «Энергия <br> изменений»
+              Марафон «Энергия <br> изменений»
             </p>
             <p class="formula3Description">
-              3 недели совместной <br> работы
+              3 недели совместной <br class="br3"> работы
             </p>
           </div>
         </div>
@@ -328,7 +330,7 @@
       темы и <br> вызовы 2021
     </p>
     <p class="tACText">
-      на IMPULSE вы:
+      на impulse вы:
     </p>
 
     <div class="tACItems tACItemsPC">
@@ -342,7 +344,7 @@
         <div class="tACItem">
           <img class="tACItemImg" src="./images/checked.png" alt="" />
           <p class="tACItemText">
-            найдете <span>свой подход</span> к вовлечению людей в изменения и трансформации
+            найдете <span>свой подход</span> к вовлечению людей в изменения и трансформации
           </p>
         </div>
         <div class="tACItem">
@@ -399,7 +401,7 @@
         <div class="tACItem">
           <img class="tACItemImg" src="./images/checked.png" alt="" />
           <p class="tACItemText">
-            найдете <span>свой подход</span> к вовлечению людей в изменения и трансформации
+            найдете <span>свой подход</span> к вовлечению людей в изменения и трансформации
           </p>
         </div>
         <div class="tACItem">
@@ -543,6 +545,30 @@
         </p>
       </div>
     </div>
+    <!-- <div class="scrollBar">
+      <div class="slider"></div>
+    </div> -->
+    <script type="text/javascript">
+      $(".speakersItems").on("scroll", function() {
+        var widthScrollEl = $(".speakersItems").get(0).scrollWidth;
+        var widthScrollBar = $(".scrollBar").outerWidth();
+        var scrollCoefficient = widthScrollBar / widthScrollEl;
+        $(".slider").css({
+          left: $(this).scrollLeft() * scrollCoefficient
+        });
+      });
+
+      $(".slider").draggable({
+        axis: "x",
+        containment: "parent",
+        drag: function(e, ui) {
+          var widthScrollEl = $(".speakersItems").get(0).scrollWidth;
+          var widthScrollBar = $(".scrollBar").outerWidth() - $(".slider").width() * 2;
+          var scrollCoefficient = widthScrollBar / widthScrollEl;
+          $(".speakersItems").scrollLeft($(".slider").position().left * scrollCoefficient);
+        }
+      });
+    </script>
 
     <img class="speakersBg" src="./images/speakers-bg.png" alt="" />
   </div>
@@ -644,7 +670,7 @@
                 Технологии экспериментов: инструменты прототипирования, исследования и обратной связи от клиентов и сотрудников
               </p>
               <p class="programItemText">
-                Технологии коммуникаций: новые подходы, программы и приложения для повышения эффективности коммуникаций и укрепления связей
+                Технологии коммуникаций:<br class="br4"><br class="br5">новые подходы, программы и приложения для повышения эффективности коммуникаций и укрепления связей
               </p>
               <p class="programItemText">
                 ИТ-ландшафт для управления, производства, логистики и других управленческих задач
@@ -675,7 +701,7 @@
           <p class="pOItemCaption">
             insider
           </p>
-          <ul class="pOItemUl">
+          <ul class="pOItemUl pOItemUl1">
             <li>Ссылка на трансляцию для 1 человека</li>
             <li>Возможность задать вопрос спикерам</li>
             <li>Синхронный перевод</li>
@@ -747,6 +773,7 @@
         </div>
       </div>
     </div>
+    <a class="button2 buttonPOTop buttonPOTopTablet" href="#"> <img class="buttonPOImg" src="./images/envelope.png" alt="" /> отправить письмо руководителю </a>
 
     <img class="pOBg" src="./images/p-o-bg.png" alt="" />
   </div>
@@ -757,12 +784,12 @@
     </p>
     <img class="partnersImg" src="./images/partners.png" alt="" />
     <img class="partnersImg partnersImgTablet" src="./images/partners-tablet.png" alt="" />
-    <a class="button2 buttonPartners" href="#"> <img class="buttonPartnersImg" src="./images/handshake.png" alt="" /> купить билет </a>
+    <a class="button2 buttonPartners" href="#"> <img class="buttonPartnersImg" src="./images/handshake.png" alt="" /> стать партнером </a>
   </div>
 
   <div id="report" class="report block">
     <p class="reportCaption">
-      отчет IMPULSE&nbsp;2020
+      отчет impulse&nbsp;2020
     </p>
     <img class="reportImg" src="./images/report.png" alt="" />
     <div class="reportButtons">
@@ -789,7 +816,7 @@
           Елена <br> Черникова
         </p>
         <p class="organizerDescription">
-          Innovation Culture
+          Innovation&nbsp;Culture
         </p>
       </div>
       <div class="organizer">
