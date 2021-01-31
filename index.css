@@ -688,17 +688,23 @@ body {
 }
 
 .speakersItems {
-  margin-top: 38px;
-  display: flex;
-  align-items: flex-start;
   overflow: hidden;
   overflow-x: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .speakersItems::-webkit-scrollbar {
-  display: none;
+  width: 10px;
+  height: 101px;
+}
+
+.speakersItems::-webkit-scrollbar-track, .speakersItems::-webkit-scrollbar-thumb, .speakersItems::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.speakersItems {
+  margin-top: 38px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .speakerItem {
@@ -763,7 +769,7 @@ body {
 }
 
 .program {
-  margin-top: 140px;
+  margin-top: 40px;
 }
 
 .programBlock {
@@ -952,7 +958,7 @@ body {
   position: absolute;
   left: -300px;
   top: -396px;
-  z-index: -1;
+  z-index: -2;
 }
 
 .pOItems {
@@ -960,6 +966,19 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 56px;
+}
+.pOItems {
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.pOItems::-webkit-scrollbar {
+  width: 10px;
+  height: 101px;
+}
+
+.pOItems::-webkit-scrollbar-track, .pOItems::-webkit-scrollbar-thumb, .pOItems::-webkit-scrollbar-thumb:hover {
+  background: transparent;
 }
 
 .pOItem {
@@ -1168,6 +1187,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.organizersBlock {
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.organizersBlock::-webkit-scrollbar {
+  width: 10px;
+  height: 101px;
+}
+
+.organizersBlock::-webkit-scrollbar-track, .organizersBlock::-webkit-scrollbar-thumb, .organizersBlock::-webkit-scrollbar-thumb:hover {
+  background: transparent;
 }
 
 .organizer {
@@ -1491,17 +1524,20 @@ body {
   background: #000000;
   position: relative;
   margin: 50px auto;
+  top: -101px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: -1;
 }
 
 .slider {
   width: 52px;
   height: 52px;
+  /* left: 104px; */
   display: block;
   margin: -26px 0 0;
   position: absolute;
@@ -1889,7 +1925,7 @@ body {
   }
 
   .program {
-    margin-top: 100px;
+    margin-top: 0px;
   }
 
   .programCaption {
@@ -1971,6 +2007,7 @@ body {
 
   .buttonPOTop {
     display: none;
+    margin: 20px auto 0;
   }
 
   .pOItemPrice, .pOItemCaption {
@@ -2088,7 +2125,7 @@ body {
   }
 
   .organizers {
-    margin-top: 200px;
+    margin-top: 150px;
   }
 
   .organizer {
@@ -2656,12 +2693,6 @@ body {
   .organizersBlock {
     overflow: hidden;
     overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  .organizersBlock::-webkit-scrollbar {
-    display: none;
   }
 
   .pOItems {

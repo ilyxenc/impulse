@@ -48,6 +48,21 @@
         $("body").removeClass("menuOpened");
       });
     });
+
+
+    function scrolling(scrollEl, slider) {
+      var widthScrollEl = scrollEl.get(0).scrollWidth; //scrollEl
+      var widthSlider = slider.width(); //slider
+
+      var blockWidth = scrollEl.width(); //scrollEl
+      var scrollCoefficient = (widthScrollEl - blockWidth) / (blockWidth - widthSlider);
+      scrollEl.on("scroll", function(e) { //scrollEl
+
+        slider.css({ //slider
+          left: scrollEl.scrollLeft() / scrollCoefficient //scrollEl
+        });
+      });
+    }
   </script>
 </head>
 
@@ -545,29 +560,11 @@
         </p>
       </div>
     </div>
-    <!-- <div class="scrollBar">
-      <div class="slider"></div>
-    </div> -->
+    <div class="scrollBar">
+      <div id="slider1" class="slider"></div>
+    </div>
     <script type="text/javascript">
-      $(".speakersItems").on("scroll", function() {
-        var widthScrollEl = $(".speakersItems").get(0).scrollWidth;
-        var widthScrollBar = $(".scrollBar").outerWidth();
-        var scrollCoefficient = widthScrollBar / widthScrollEl;
-        $(".slider").css({
-          left: $(this).scrollLeft() * scrollCoefficient
-        });
-      });
-
-      $(".slider").draggable({
-        axis: "x",
-        containment: "parent",
-        drag: function(e, ui) {
-          var widthScrollEl = $(".speakersItems").get(0).scrollWidth;
-          var widthScrollBar = $(".scrollBar").outerWidth() - $(".slider").width() * 2;
-          var scrollCoefficient = widthScrollBar / widthScrollEl;
-          $(".speakersItems").scrollLeft($(".slider").position().left * scrollCoefficient);
-        }
-      });
+      scrolling($(".speakersItems"), $("#slider1"));
     </script>
 
     <img class="speakersBg" src="./images/speakers-bg.png" alt="" />
@@ -773,6 +770,26 @@
         </div>
       </div>
     </div>
+    <div id="scrollBar3" class="scrollBar">
+      <div id="slider3" class="slider"></div>
+    </div>
+    <script type="text/javascript">
+      if ($(".pOItems").get(0).scrollWidth != $(".pOItems").width()) {
+        scrolling($(".pOItems"), $("#slider3"));
+      } else {
+        $("#scrollBar3").remove();
+      }
+      $(window).on("resize", function() {
+        if ($(".pOItems").get(0).scrollWidth != $(".pOItems").width()) {
+          if (!$("#scrollBar2").length) {
+            $(".pOItems").after('<div id="scrollBar3" class="scrollBar"><div id="slider3" class="slider"></div></div>');
+          }
+          scrolling($(".pOItems"), $("#slider3"));
+        } else {
+          $("#scrollBar3").remove();
+        }
+      });
+    </script>
     <a class="button2 buttonPOTop buttonPOTopTablet" href="#"> <img class="buttonPOImg" src="./images/envelope.png" alt="" /> отправить письмо руководителю </a>
 
     <img class="pOBg" src="./images/p-o-bg.png" alt="" />
@@ -838,6 +855,26 @@
         </p>
       </div>
     </div>
+    <div id="scrollBar2" class="scrollBar">
+      <div id="slider2" class="slider"></div>
+    </div>
+    <script type="text/javascript">
+      if ($(".organizersBlock").get(0).scrollWidth != $(".organizersBlock").width()) {
+        scrolling($(".organizersBlock"), $("#slider2"));
+      } else {
+        $("#scrollBar2").remove();
+      }
+      $(window).on("resize", function() {
+        if ($(".organizersBlock").get(0).scrollWidth != $(".organizersBlock").width()) {
+          if (!$("#scrollBar2").length) {
+            $(".organizersBlock").after('<div id="scrollBar2" class="scrollBar"><div id="slider2" class="slider"></div></div>');
+          }
+          scrolling($(".organizersBlock"), $("#slider2"));
+        } else {
+          $("#scrollBar2").remove();
+        }
+      });
+    </script>
   </div>
 
   <div class="footer">
