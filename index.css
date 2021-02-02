@@ -324,7 +324,7 @@ body {
   font-family: "Aeroport";
   font-size: 96px;
   font-style: normal;
-  line-height: 131px;
+  line-height: 92px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -346,7 +346,7 @@ body {
   letter-spacing: 0em;
   text-align: left;
   max-width: 600px;
-  margin-top: 100px;
+  margin-top: 160px;
 }
 
 .menuBlockBg {
@@ -952,11 +952,11 @@ body {
 }
 
 .pOBg {
-  width: 1831px;
+  width: 2031px;
   height: auto;
   display: block;
   position: absolute;
-  left: -300px;
+  left: -400px;
   top: -396px;
   z-index: -2;
 }
@@ -967,6 +967,7 @@ body {
   align-items: flex-start;
   margin-top: 56px;
 }
+
 .pOItems {
   overflow: hidden;
   overflow-x: scroll;
@@ -1234,7 +1235,7 @@ body {
 }
 
 .footer {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 100%;
   position: relative;
   padding-bottom: 137px;
@@ -1263,7 +1264,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .footerLeft, .footerRight {
@@ -1322,7 +1323,7 @@ body {
   color: #733DEC;
   display: block;
   margin-left: 105px;
-  margin-top: 151px;
+  margin-top: 57px;
   width: fit-content;
 }
 
@@ -1543,6 +1544,168 @@ body {
   position: absolute;
   cursor: pointer;
   background: url(./images/slider.png) no-repeat center center / contain;
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1140px) and (orientation: landscape) and (max-height: 800px) {
+  .headerInfoLeft {
+    margin-top: 110px;
+  }
+
+  .headerInfoRight {
+    margin-top: 120px;
+  }
+
+  .formula2 {
+    margin-top: 80px;
+  }
+
+  .formula1Text {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .formula1Caption {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .formula1Li {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .formula1WhatIs {
+    width: 198px;
+    margin-top: -16px;
+  }
+
+  .formula2Text {
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  .formula2Bg {
+    width: 245px;
+    height: 245px;
+    top: -100px;
+  }
+
+  .formula2Bg1 {
+    left: -65px;
+  }
+
+  .formula2Bg2 {
+    left: -60px;
+  }
+
+  .formula2Bg3 {
+    left: -60px;
+  }
+
+  .formula2Bg4 {
+    left: -74px;
+  }
+
+  .formula3Caption {
+    font-size: 18px;
+    line-height: 18px;
+    height: 36px;
+  }
+
+  .formula3Description {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+
+  .formulaDate {
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+  }
+
+  .formula3 {
+    margin-top: 63px;
+  }
+
+  .tACItemText {
+    min-height: 130px;
+  }
+
+  .speakersItems {
+    margin-top: 20px;
+  }
+
+  .speakerImg {
+    margin-bottom: 20px;
+  }
+
+  .speakerName {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .speakerDescription {
+    font-size: 16px;
+    line-height: 22px;
+    min-height: 88px;
+  }
+
+  .programCaption {
+    margin-bottom: 20px;
+  }
+
+  .buttonProgram1, .buttonProgram2 {
+    margin-top: 30px;
+  }
+
+  .programRight, .programLeft {
+    padding: 0px 60px 30px 30px;
+  }
+
+  .pOItems {
+    margin-top: 20px;
+  }
+
+  .pOItemCaption {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .pOItem {
+    padding: 14px 30px 25px;
+  }
+
+  .pOItemUl li {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .pOItemUl {
+    min-height: 400px;
+  }
+
+  .pOItemUl3 {
+    min-height: calc(400px - 30px);
+  }
+
+  .pOItemPrice {
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  .partnersImg {
+    margin: 20px auto 50px;
+  }
+
+  .reportImg {
+    margin: 20px auto 25px;
+  }
+
+  .buttonReport {
+    height: 50px;
+  }
 }
 
 @media only screen and (max-width: 1440px) {}
