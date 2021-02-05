@@ -49,19 +49,19 @@
     });
 
 
-    function scrolling(scrollEl, slider) {
-      var widthScrollEl = scrollEl.get(0).scrollWidth; //scrollEl
-      var widthSlider = slider.width(); //slider
-
-      var blockWidth = scrollEl.width(); //scrollEl
-      var scrollCoefficient = (widthScrollEl - blockWidth) / (blockWidth - widthSlider);
-      scrollEl.on("scroll", function(e) { //scrollEl
-
-        slider.css({ //slider
-          left: scrollEl.scrollLeft() / scrollCoefficient //scrollEl
-        });
-      });
-    }
+    // function scrolling(scrollEl, slider) {
+    //   var widthScrollEl = scrollEl.get(0).scrollWidth; //scrollEl
+    //   var widthSlider = slider.width(); //slider
+    //
+    //   var blockWidth = scrollEl.width(); //scrollEl
+    //   var scrollCoefficient = (widthScrollEl - blockWidth) / (blockWidth - widthSlider);
+    //   scrollEl.on("scroll", function(e) { //scrollEl
+    //
+    //     slider.css({ //slider
+    //       left: scrollEl.scrollLeft() / scrollCoefficient //scrollEl
+    //     });
+    //   });
+    // }
   </script>
 </head>
 
@@ -559,12 +559,12 @@
         </p>
       </div>
     </div>
-    <div class="scrollBar">
+    <!-- <div class="scrollBar">
       <div id="slider1" class="slider"></div>
     </div>
     <script type="text/javascript">
       scrolling($(".speakersItems"), $("#slider1"));
-    </script>
+    </script> -->
 
     <img class="speakersBg" src="./images/speakers-bg.png" alt="" />
   </div>
@@ -769,10 +769,10 @@
         </div>
       </div>
     </div>
-    <div id="scrollBar3" class="scrollBar">
+    <!-- <div id="scrollBar3" class="scrollBar">
       <div id="slider3" class="slider"></div>
-    </div>
-    <script type="text/javascript">
+    </div> -->
+    <!-- <script type="text/javascript">
       if ($(".pOItems").get(0).scrollWidth != $(".pOItems").width()) {
         scrolling($(".pOItems"), $("#slider3"));
       } else {
@@ -788,7 +788,7 @@
           $("#scrollBar3").remove();
         }
       });
-    </script>
+    </script> -->
     <a class="button2 buttonPOTop buttonPOTopTablet" href="#"> <img class="buttonPOImg" src="./images/envelope.png" alt="" /> отправить письмо руководителю </a>
 
     <img class="pOBg" src="./images/p-o-bg.png" alt="" />
@@ -798,8 +798,18 @@
     <p class="partnersCaption">
       партнеры
     </p>
-    <img class="partnersImg" src="./images/partners.png" alt="" />
-    <img class="partnersImg partnersImgTablet" src="./images/partners-tablet.png" alt="" />
+    <!-- <img class="" src="./images/partners.png" alt="" /> -->
+    <div class="partnersImgsBlock">
+      <img class="partnersImg" src="./images/partners/partner-1.svg" alt="">
+      <img class="partnersImg" src="./images/partners/partner-1.svg" alt="">
+      <img class="partnersImg" src="./images/partners/partner-1.svg" alt="">
+      <img class="partnersImg" src="./images/partners/partner-1.svg" alt="">
+      <img class="partnersImg" src="./images/partners/partner-1.svg" alt="">
+      <img class="partnersImg" src="./images/partners/partner-1.svg" alt="">
+      <img class="partnersImg" src="./images/partners/partner-1.svg" alt="">
+      <img class="partnersImg" src="./images/partners/partner-1.svg" alt="">
+      <img class="partnersImg" src="./images/partners/partner-1.svg" alt="">
+    </div>
     <a class="button2 buttonPartners" href="#"> <img class="buttonPartnersImg" src="./images/handshake.png" alt="" /> стать партнером </a>
   </div>
 
@@ -854,10 +864,10 @@
         </p>
       </div>
     </div>
-    <div id="scrollBar2" class="scrollBar">
+    <!-- <div id="scrollBar2" class="scrollBar">
       <div id="slider2" class="slider"></div>
-    </div>
-    <script type="text/javascript">
+    </div> -->
+    <!-- <script type="text/javascript">
       if ($(".organizersBlock").get(0).scrollWidth != $(".organizersBlock").width()) {
         scrolling($(".organizersBlock"), $("#slider2"));
       } else {
@@ -873,7 +883,7 @@
           $("#scrollBar2").remove();
         }
       });
-    </script>
+    </script> -->
   </div>
 
   <div class="footer">
