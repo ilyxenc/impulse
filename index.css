@@ -695,7 +695,6 @@ body {
 .speakersItems::-webkit-scrollbar {
   width: 10px;
   height: 101px;
-  display: none;
 }
 
 .speakersItems::-webkit-scrollbar-track, .speakersItems::-webkit-scrollbar-thumb, .speakersItems::-webkit-scrollbar-thumb:hover {
@@ -978,7 +977,6 @@ body {
 .pOItems::-webkit-scrollbar {
   width: 10px;
   height: 101px;
-  display: none;
 }
 
 .pOItems::-webkit-scrollbar-track, .pOItems::-webkit-scrollbar-thumb, .pOItems::-webkit-scrollbar-thumb:hover {
@@ -1207,7 +1205,7 @@ body {
 
 .organizersBlock::-webkit-scrollbar {
   width: 10px;
-  height: 91px;
+  height: 101px;
 }
 
 .organizersBlock::-webkit-scrollbar-track, .organizersBlock::-webkit-scrollbar-thumb, .organizersBlock::-webkit-scrollbar-thumb:hover {
@@ -1245,7 +1243,7 @@ body {
 }
 
 .footer {
-  margin-top: 0px;
+  margin-top: 50px;
   width: 100%;
   position: relative;
   padding-bottom: 137px;
@@ -1554,6 +1552,10 @@ body {
   position: absolute;
   cursor: pointer;
   background: url(./images/slider.png) no-repeat center center / contain;
+}
+
+#scrollBar3, #scrollBar2 {
+  display: none;
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 1140px) and (orientation: landscape) and (max-height: 800px) {
@@ -2405,6 +2407,10 @@ body {
   .buttonPOTopTablet {
     display: flex;
   }
+
+  .footer {
+    margin-top: -50px;
+  }
 }
 
 @media only screen and (max-width: 668px) {
@@ -3014,6 +3020,10 @@ body {
 
   .footer {
     padding-bottom: 50px;
+  }
+
+  #scrollBar3, #scrollBar2 {
+    display: block;
   }
 }
 
