@@ -60,6 +60,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
   font-smoothing: antialiased;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
 }
 
 body {
@@ -695,6 +697,7 @@ body {
 .speakersItems::-webkit-scrollbar {
   width: 10px;
   height: 101px;
+  display: none;
 }
 
 .speakersItems::-webkit-scrollbar-track, .speakersItems::-webkit-scrollbar-thumb, .speakersItems::-webkit-scrollbar-thumb:hover {
@@ -977,6 +980,7 @@ body {
 .pOItems::-webkit-scrollbar {
   width: 10px;
   height: 101px;
+  display: none;
 }
 
 .pOItems::-webkit-scrollbar-track, .pOItems::-webkit-scrollbar-thumb, .pOItems::-webkit-scrollbar-thumb:hover {
@@ -1206,6 +1210,8 @@ body {
 .organizersBlock::-webkit-scrollbar {
   width: 10px;
   height: 101px;
+  display: none;
+
 }
 
 .organizersBlock::-webkit-scrollbar-track, .organizersBlock::-webkit-scrollbar-thumb, .organizersBlock::-webkit-scrollbar-thumb:hover {
@@ -1533,7 +1539,7 @@ body {
   background: #000000;
   position: relative;
   margin: 50px auto;
-  top: -101px;
+  /* top: -101px; */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
