@@ -765,7 +765,7 @@ body {
   position: absolute;
   right: -1200px;
   bottom: -1000px;
-  z-index: -1;
+  z-index: -2;
 }
 
 .program {
@@ -2095,8 +2095,9 @@ body {
   }
 
   .speakersBg {
-    right: -700px;
-    bottom: -500px;
+    right: -600px;
+    bottom: -300px;
+    width: 1000px;
   }
 
   .program {
