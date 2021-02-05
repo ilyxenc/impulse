@@ -60,15 +60,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  touch-action: pan-y;
-  -ms-touch-action: pan-y;
 }
 
 body {
   width: auto;
   overflow: hidden;
+  overflow-x: hidden !important;
   overflow-y: scroll;
   min-width: 320px;
+}
+
+.body {
+  width: 100%;
+  overflow-x: hidden !important;
+  overflow-y: scroll;
 }
 
 .block {
@@ -1211,7 +1216,6 @@ body {
   width: 10px;
   height: 101px;
   display: none;
-
 }
 
 .organizersBlock::-webkit-scrollbar-track, .organizersBlock::-webkit-scrollbar-thumb, .organizersBlock::-webkit-scrollbar-thumb:hover {
@@ -2685,6 +2689,11 @@ body {
 
   .tAC {
     margin-top: 100px;
+  }
+
+  .header, .tAC, .menuBlock, .formula, .speakers, .program, .pO, .partners, .report, .organizers, .footer {
+    /* overflow-x: hidden;
+    overflow-y: visible !important; */
   }
 
   .speakersItems {
